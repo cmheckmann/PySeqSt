@@ -1,6 +1,8 @@
 # Python Sequence to Structure (PySeqSt)
 #### Video Demo:  https://youtu.be/_S9PuQmHux8
 #### Description: Takes amino acid sequences and finds corresponding structures in the RCSB Protein Data Bank or EBI AlphaFold Protein Structure Database
+## Requirements
+requests https://requests.readthedocs.io/en/latest/
 
 ## How to run the program
 |Args          |  Function                                       |
@@ -50,11 +52,6 @@ pd.py
 PySeqSt.py
 README.md
 seq.py
-```
-## Folders included
-```
-.\
-.\test
 ```
 ## File descriptions
 ### af.py
@@ -219,14 +216,6 @@ Helper methods:\
 `def _verify_dscrptr(self, d: str, s: str) -> str:`\
 """Verify a descriptor and sequence match what is stored in object.\
         Also check possible (de)incremented versions."""
-### .\test
-### Protocol & files for testing.
-Commands to test and sample command line output:
-> testing.txt
 
-Sample fasts files used during testing:
-> seq.fasta\
-> test.fasta\
-> empty.fasta
 
 Folder `testing_results` contains the output folder structure that should be obtained following the commands.
