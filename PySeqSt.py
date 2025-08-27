@@ -22,7 +22,7 @@ def main():
     args = parse_cl_args()
 
     # Switch functionality depending on command line args
-    if not (args.seq or args.file):
+    if not (args.seq or args.file) and not args.blast:
         seqs = process_input(input("Protein sequence: ").strip())
         print("Sequence successfully loaded from user input.")
     elif args.seq:
@@ -143,3 +143,4 @@ def _regex_type(pattern: str | re.Pattern):
 
 if __name__ == "__main__":
     main()
+
